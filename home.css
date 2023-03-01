@@ -1,0 +1,1007 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: #232F34; */
+    color: #ffffff;
+
+}
+
+.body {
+    width: 100%;
+}
+
+#openbar .fa-bars {
+    font-size: 1.5rem;
+    color: #000000;
+    display: none;
+}
+
+#closebar i {
+    font-size: 1.2rem;
+    display: none;
+    color: #000000
+}
+#home::before{
+    content: "";
+    width:3rem;
+    height: 18px;
+    position: absolute;
+    top:1.7rem;
+    border-bottom: 3px solid rgb(94, 97, 252);
+}
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fdfcff;
+
+
+}
+
+.nav .mainbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 20px;
+    flex-wrap: nowrap;
+
+
+}
+
+.nav ul li {
+    list-style: none;
+    padding: 20px 20px 20px 20px;
+    font-family: "NeueHaasGrotText", Sans-serif;
+  color: #000000;
+
+}
+
+.nav ul li i {
+    color: #ff9200;
+
+}
+
+.nav ul li a {
+    text-decoration: none;
+    /* background-color: #312e36; */
+    padding: 5px;
+    cursor: pointer;
+    border-radius: .5rem;
+    color: #000000;
+    font-size: 1rem;
+
+}
+
+.serve {
+    display: none;
+    flex-direction: column;
+    width: 12rem;
+    height: fit-content;
+    border: 2px solid black;
+    z-index: 1;
+}
+
+.serve ul li a {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Clrndnk', sans-serif;
+}
+
+.nav li:hover .serve {
+    display: inline-block;
+    position: absolute;
+    right: 35rem;
+    top: 2.8rem;
+    background-color: #8b829a;
+
+}
+
+.contact {
+    display: none;
+    flex-direction: column;
+    width: 12rem;
+    height: fit-content;
+    border: 2px solid black;
+    z-index: 1;
+
+}
+
+.contact ul li a {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: 'Clrndnk', sans-serif;
+
+}
+
+.nav li:hover .contact {
+    display: inline-block;
+    position: absolute;
+    left:65rem;
+    top: 2.8rem;
+    background-color: #8b829a;
+
+}
+
+#logo img {
+    height: 4rem;
+    width: 10rem;
+    /* border-radius:50rem; */
+
+
+}
+
+.home {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 75vh;
+    padding: 3px 200px;
+    justify-content: space-around;
+    align-items: center;
+    background: url('img/banner om.png') no-repeat center center/cover;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+
+.home h1 {
+    position: relative;
+    top: 2rem;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+
+}
+
+.home p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Jacques Francois Shadow', cursive;
+    font-family: 'Oswald', sans-serif;
+}
+
+.btn {
+
+    color: #eee;
+    padding: 1rem;
+    background-color: rgb(46, 32, 177);
+    cursor: pointer;
+    border-radius: 1.5rem;
+    font-size: medium;
+    font-weight: 5rem;
+
+
+}
+
+.btn:hover {
+    padding: 1rem;
+    background-color: rgb(22, 158, 22);
+    cursor: pointer;
+    border-radius: 1.5rem;
+    transition: .5s;
+}
+
+/* 3rd */
+.mid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: fit-content;
+    padding: 1.5rem 2.5rem;
+
+}
+
+.left {
+    width: 50%;
+}
+
+.left img {
+    width: 45rem;
+    border-radius: 5px;
+    height: 30rem;
+}
+
+.right {
+    width: 40%;
+    opacity: 0.7;
+
+}
+
+#blue p {
+    color: rgb(0, 12, 248);
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: "NeueHaasGrotText", Sans-serif;
+    margin-bottom: 2rem;
+
+}
+
+#grey p {
+    color: rgb(58, 58, 73);
+    font-size: 1.7rem;
+    font-family: "NeueHaasGrotText", Sans-serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#black p {
+    color: rgb(1, 1, 1);
+    font-size: 1.3rem;
+    text-align: justify;
+    font-family: "NeueHaasGrotText", Sans-serif;
+    ;
+
+}
+
+.trust {
+    background-color: rgb(0, 51, 153);
+    height: 5rem;
+    padding: 3rem 0rem 1rem 0rem;
+    text-align: center;
+    font-family: "NeueHaasGrotText", Sans-serif;
+}
+
+.trust p {
+    font-size: 1.6rem;
+}
+
+/* service */
+.work {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+.provide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    border-left: 2px dotted black;
+    padding: 3rem 1rem 1rem 1rem;
+    width: 25%;
+    height: fit-content;
+}
+
+#provide {
+    border: none;
+}
+
+.provide .fa-solid {
+    background-color: rgb(0, 51, 153);
+    padding: 1.4rem;
+    border-radius: 5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #eee;
+    text-align: end;
+    line-height: 2rem;
+}
+
+.provide p {
+    color: #000000;
+    font-family: "NeueHaasGrotText", Sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#para {
+    font-size: 1rem;
+    margin-top: 1rem;
+    opacity: 0.6;
+}
+
+/* container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-height: fit-content;
+    padding: 0rem 0rem 2rem 0rem;
+
+}
+
+.section {
+    max-height: fit-content;
+    width: 100%;
+
+}
+
+.section h2 {
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    padding: 0rem 0rem 2rem 0rem;
+
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.cards p {
+    font-size: 1.5rem;
+    font-family: "NeueHaasGrotText", Sans-serif;
+    font-weight: bold;
+}
+
+.cards img {
+    height: 10rem;
+    width: 10rem;
+}
+
+.cards p {
+    color: rgb(101, 96, 96);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background:linear-gradient(rgba(16, 15, 17, 0.7),rgba(37, 30, 30, 0.7)),url('img/abstract-purple-backgrounds-picture-id1204187820.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+
+.aboutus p {
+    font-size: 1.2rem;
+    padding: 4px;
+    font-family: "NeueHaasGrotText", Sans-serif;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.reviews a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 4px;
+    font-family: "NeueHaasGrotText", Sans-serif;
+}
+
+.reviews a:hover {
+    color: rgb(152, 152, 216);
+}
+
+.contactlogo {
+    align-self: center;
+
+}
+
+.contactlogo .icon a i {
+    font-size: 2.5rem;
+    margin: 0.5rem;
+    border: 2px solid white;
+    padding: 2px;
+}
+
+.contactlogo h2 {
+    font-size: 1.2rem;
+}
+
+.contactlogo .icon a i:hover {
+    background-color: rgb(246, 172, 172);
+}
+
+@media screen and (max-width:300px) {
+    .nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #fdfcff;
+    }
+    #home::before{
+        content:none;
+    }
+    #openbar .fa-bars {
+        font-size: 1.5rem;
+        color: #000000;
+        display: contents;
+    }
+
+   
+#closebar i {
+    font-size: 1.2rem;
+    display: contents;
+    color: #000000
+}
+
+    .mainbar {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: none;
+        position: absolute;
+        top: 2rem;
+        left: 0rem;
+        width: 100%;
+        z-index: 1;
+        background-color: #ffffff;
+        visibility: hidden;
+    }
+
+    .open {
+        visibility: visible;
+    }
+
+    .mainbar li a {
+        font-size: 1.5rem;
+        padding: 5px
+    }
+
+    #logo img {
+        height: 4rem;
+        width: 10rem;
+        /* border-radius:50rem; */
+    }
+
+    .home {
+        display: flex;
+        flex-wrap: none;
+        height: 50vh;
+        flex-direction: column;
+        padding: 3px 0px;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+
+    .home h1 {
+        position: relative;
+        top: 2rem;
+        font-size: 2.5rem;
+
+    }
+
+    .home p {
+        font-size: 1.5rem;
+    }
+
+    /* 3rd */
+    .mid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: fit-content;
+        padding: 1.5rem 0.5rem;
+
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left img {
+        width: 15rem;
+        border-radius: 5px;
+        height: 12rem;
+    }
+
+    .right {
+        width: 100%;
+        opacity: 0.7;
+
+    }
+
+    .trust {
+        padding: 1rem 0rem 1rem 0rem;
+    }
+
+    #blue p {
+        font-size: 1.5rem;
+    }
+
+    #grey p {
+        font-size: 1.2rem;
+    }
+
+    #black p {
+        font-size: 1rem;
+    }
+
+    .trust p {
+        font-size: 1.1rem;
+    }
+
+    /* service */
+    .work {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0rem;
+        flex-direction: column;
+
+    }
+
+    .provide {
+        margin: 0rem;
+        border-bottom: 2px dotted black;
+        border-left: 0;
+        padding: 0rem 0rem 1rem 0rem;
+        width: 100%;
+    }
+
+    .provide .fa-solid {
+        padding: 1rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .provide p {
+        font-size: 1rem;
+    }
+
+    /* container */
+    .section h2 {
+        color: black;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 0rem 0rem 2rem 0rem;
+
+    }
+
+    .cards p {
+        font-size: 1.5rem;
+        font-family: "NeueHaasGrotText", Sans-serif;
+        font-weight: bold;
+    }
+
+    .cards img {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .cards p {
+        color: rgb(101, 96, 96);
+        font-size: 1rem;
+        text-align: center;
+        margin: 0rem 1rem;
+    }
+
+    /* Footer */
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: space-evenly;
+        padding: 2rem 0rem;
+
+    }
+
+    .aboutus {
+        margin-bottom: 1.5rem;
+    }
+
+    .aboutus p {
+        font-size: 1rem;
+    }
+
+    .reviews a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        padding: 4px;
+        font-family: "NeueHaasGrotText", Sans-serif;
+    }
+
+    .reviews a:hover {
+        color: rgb(152, 152, 216);
+    }
+
+    .contactlogo {
+        align-self: center;
+
+    }
+
+    .contactlogo .icon a i {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+        border: 2px solid white;
+        padding: 2px;
+    }
+
+    .contactlogo h2 {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (min-width:300px) and (max-width:720px) {
+    .nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #fdfcff;
+    }
+    #home::before{
+        content:none;
+    }
+    #openbar .fa-bars {
+        font-size: 1.8rem;
+        color: #000000;
+        display: contents;
+    }
+
+    #closebar i {
+        font-size: 1.8rem;
+        display: contents;
+        color: #000000
+    }
+
+    .mainbar {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: none;
+        position: absolute;
+        top: 2rem;
+        left: 0rem;
+        width: 100%;
+        z-index: 1;
+        background-color: #ffffff;
+        visibility: hidden;
+    }
+
+    .open {
+        visibility: visible;
+    }
+
+    #logo img {
+        height: 5rem;
+        width: 15rem;
+        /* border-radius:50rem; */
+    }
+
+    .home {
+        display: flex;
+        flex-wrap: none;
+        flex-direction: column;
+        padding: 3px 0px;
+        justify-content: space-around;
+        align-items: center;
+        height: 55vh;
+
+    }
+
+
+    .home h1 {
+        position: relative;
+        top: 2rem;
+        font-size: 3rem;
+
+    }
+
+    .home p {
+        font-size: 1.5rem;
+    }
+
+    /* 3rd */
+    .mid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: fit-content;
+        padding: 1.5rem 0.5rem;
+
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left img {
+        width: 15rem;
+        border-radius: 5px;
+        height: 12rem;
+    }
+
+    .right {
+        width: 100%;
+        opacity: 0.7;
+
+    }
+
+    .trust {
+        padding: 1rem 0rem 1rem 0rem;
+    }
+
+    .trust p {
+        font-size: 1.1rem;
+    }
+
+    /* service */
+    .work {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0rem;
+        flex-direction: column;
+
+    }
+
+    .provide {
+        margin: 0rem;
+        border-bottom: 2px dotted black;
+        border-left: 0;
+        padding: 0rem 0rem 1rem 0rem;
+        width: 100%;
+    }
+
+    .provide .fa-solid {
+        padding: 1rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .provide p {
+        font-size: 1rem;
+    }
+
+    /* container */
+    .section h2 {
+        color: black;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 0rem 0rem 2rem 0rem;
+
+    }
+
+    .cards p {
+        font-size: 1.5rem;
+        font-family: "NeueHaasGrotText", Sans-serif;
+        font-weight: bold;
+    }
+
+    .cards img {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .cards p {
+        color: rgb(101, 96, 96);
+        font-size: 1rem;
+        text-align: center;
+        margin: 0rem 1rem;
+    }
+
+    /* Footer */
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: space-evenly;
+        padding: 2rem 0rem;
+
+    }
+
+    .aboutus {
+        margin-bottom: 1.5rem;
+    }
+
+    .aboutus p {
+        font-size: 1rem;
+    }
+
+    .reviews a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        padding: 4px;
+        font-family: "NeueHaasGrotText", Sans-serif;
+    }
+
+    .reviews a:hover {
+        color: rgb(152, 152, 216);
+    }
+
+    .contactlogo {
+        align-self: center;
+
+    }
+
+    .contactlogo .icon a i {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+        border: 2px solid white;
+        padding: 2px;
+    }
+
+    .contactlogo h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:720px) and (max-width:1023px) {
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fdfcff;
+        flex-direction: column;
+
+    }
+
+    .nav .mainbar {
+        display: flex;
+        flex-wrap: none;
+    }
+
+
+    #logo img {
+        height: 5rem;
+        width: 15rem;
+        /* border-radius:50rem; */
+    }
+
+    .home {
+        display: flex;
+        flex-wrap: none;
+        flex-direction: column;
+        padding: 3px 0px;
+        justify-content: space-around;
+        align-items: center;
+        height: 35vh;
+
+    }
+
+
+    .home h1 {
+        position: relative;
+        top: 2rem;
+        font-size: 4rem;
+
+    }
+
+    .home p {
+        font-size: 2.2rem;
+    }
+
+    /* 3rd */
+
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+        opacity: 0.7;
+
+    }
+
+
+    /* service */
+    .work {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0rem;
+        flex-direction: column;
+
+    }
+
+    .provide {
+        margin: 0rem;
+        border-bottom: 2px dotted black;
+        border-left: 0;
+        padding: 0rem 0rem 1rem 0rem;
+        width: 100%;
+    }
+
+    .provide .fa-solid {
+        padding: 1rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .provide p {
+        font-size: 1rem;
+    }
+
+    /* container */
+    .section h2 {
+        color: black;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 0rem 0rem 2rem 0rem;
+
+    }
+
+    .cards p {
+        font-size: 1.5rem;
+        font-family: "NeueHaasGrotText", Sans-serif;
+        font-weight: bold;
+    }
+
+    .cards img {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .cards p {
+        color: rgb(101, 96, 96);
+        font-size: 1rem;
+        text-align: center;
+        margin: 0rem 1rem;
+    }
+
+    /* Footer */
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: space-evenly;
+        padding: 2rem 0rem;
+
+    }
+
+    .aboutus {
+        margin-bottom: 1.5rem;
+    }
+
+    .aboutus p {
+        font-size: 1rem;
+    }
+
+    .reviews a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        padding: 4px;
+        font-family: "NeueHaasGrotText", Sans-serif;
+    }
+
+    .reviews a:hover {
+        color: rgb(152, 152, 216);
+    }
+
+    .contactlogo {
+        align-self: center;
+
+    }
+
+    .contactlogo .icon a i {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+        border: 2px solid white;
+        padding: 2px;
+    }
+
+    .contactlogo h2 {
+        font-size: 1.2rem;
+    }
+
+}
